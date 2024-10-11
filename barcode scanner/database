@@ -1,0 +1,16 @@
+Database Schema
+
+Create a table named products with the following columns:
+
+Column Name	Data Type	Description
+barcode_id	varchar(255)	Unique barcode ID
+product_name	varchar(255)	Product name
+quantity	int	Quantity of the product
+price	decimal(10, 2)	Price of the product
+total_price	decimal(10, 2)	Total price of the product
+Note: Replace your_username, your_password, your_database with your actual database credentials and name.
+
+This code assumes that you have a barcode reader that can send the scanned barcode data to the input box. 
+When the user clicks the "Scan" button, the code sends an AJAX request to the get_product_details.php file,
+ which retrieves the product details from the database based on the scanned barcode. The product details 
+ are then displayed in the table.
