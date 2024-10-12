@@ -178,6 +178,7 @@ margin-right: 10px;
 .left-column_in{
     width: 97vw;
     height: 70vh;
+    max-height: 600px;
     float: left;
     border-radius: 10px; 
     display: flex;

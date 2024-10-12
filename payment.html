@@ -112,10 +112,10 @@
   // Function to fetch the price from another webpage
 function fetchPrice() {
     // Replace 'path/to/your/price-page' with the actual path
-    fetch('path/to/your/price-page')
+    fetch('https://rahulrathore579.github.io/Zapkart/')
         .then(response => response.json())
         .then(data => {
-            document.getElementById('price').textContent = data.price;
+            document.getElementById('pay').textContent = data.price;
         })
         .catch(error => console.error('Error fetching price:', error));
 }
