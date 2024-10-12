@@ -86,7 +86,8 @@ body {
     height: 12vh;
     border-radius: 10px;
     background-image: url('images.jpeg');
-    background-repeat:  repeat;
+    background-repeat:  no-repeat;
+    background-size: cover;
     
     height: 100%;    
 }
@@ -102,6 +103,7 @@ body {
 .cart-item {
     width: 28%;
     height: 75%;
+    max-height: 600px;
     margin: 3px;
     padding: 10px;
     margin-top: 20px;
@@ -143,7 +145,7 @@ margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 4px 5px;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     margin: 5px;
 }
@@ -262,3 +264,36 @@ td {
     border-radius: 10px;
     margin-top: 170px;
 }
+
+#shopping-list {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #shopping-list th, #shopping-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #shopping-list th {
+    background-color: #f0f0f0;
+  }
+  
+  #print-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #print-btn:hover {
+    background-color: #3e8e41;
+  }
+  .img1{
+    height: 25%;
+    width: 70%;
+  }

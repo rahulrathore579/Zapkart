@@ -31,7 +31,7 @@
         <div class="left-column_in">
             <button class="add-item-button">Add New Item</button>
             <div class="cart-item"  >
-                <img src="COKIES\Screenshot 2024-07-19 021354.png" alt="Item 1 Image" height="100px" width="150px" >
+                <img src="COKIES\Screenshot 2024-07-19 021354.png" alt="Item 1 Image" height="100px" width="150px">
                 <p class="item-name">Item 1</p>
                 <p class="quantity">Quantity: <span id="totalclick1">1</span></p>
                 <p class="price">Price: <span id="price1">100.00</span> Rs</p>
@@ -568,9 +568,7 @@
                 My cart
             </div>
             <div id="itemDetails" class="bottom-section">
-                <table border="0" id
-
-                ="itemTable">
+                <table border="0" id="itemTable">
                     <thead class="text">
                         <tr>
                             <th>Item</th>
@@ -611,26 +609,7 @@
         }, 5000);
     </script>
     <script>
-        
-                // Set up Stripe API credentials
-const stripe = Stripe('rzp_test_RYoXDJYu4yQOpu');
-
-// Get the pay button element
-const payButton = document.getElementById('pay-button');
-
-// Add an event listener to the button
-payButton.addEventListener('click', async () => {
-  // Create a new payment intent
-  const paymentIntent = await stripe.paymentIntents.create({
-    amount: 1000,
-    currency: 'usd',
-  });
-
-  // Redirect the user to the checkout page
-  window.location.href = `/checkout?payment_intent_id=${paymentIntent.id}`;
-});
-
-        //==
+        //==cart item function
         let payPrice = 0;
         function totalclick(click, itemNumber) {
             const totalclick = document.getElementById('totalclick' + itemNumber);
