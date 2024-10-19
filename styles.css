@@ -158,6 +158,13 @@ margin-right: 10px;
     border-radius: 10px;
     align-items: center;
 }
+
+.suspend:hover, .hold:hover, .checkout:hover {
+    background-color: #8aaef6;
+    border: 5px solid #f12626;
+    border-radius: 10px;
+    align-items: center;
+}
 .scrollable-div {
     width: 500px;
     height: 280px;
